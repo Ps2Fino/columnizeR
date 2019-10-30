@@ -1,7 +1,7 @@
 ::::::::{.columns}
 :::{.column}
 
-```{r, results='asis', echo=FALSE}
+```{r, results='asis', echo=FALSE, warning=FALSE}
 is.text <- knitr::opts_current$get(name='content.type')
 if (is.text) {
   cat (readr::read_lines(file = paste0(knitr::opts_current$get(name='wd'), '/', knitr::opts_current$get(name='left_content_path'))), sep = '\n')
