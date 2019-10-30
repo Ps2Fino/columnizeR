@@ -15,5 +15,5 @@ License: LGPL
 Encoding: UTF-8
 LazyData: true
 Imports:
-    knitr (>= 1.23)
+    knitr (>= 1.23),
     here (>= 0.1)
