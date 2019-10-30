@@ -1,26 +1,3 @@
-<!-- 
-  Multiple ways to this for HTML output
-  Here's one such way.
--->
-
-<!-- <div class="columns-2"> -->
-
-<!-- ```{r, results='asis', echo=FALSE} -->
-<!-- # knitr::knit_child(knitr::opts_current$get (name='left_content_path')) -->
-<!-- cat (read_lines(file = knitr::opts_current$get(name='left_content_path')), sep = '\n') -->
-<!-- ``` -->
-
-<!-- ```{r, results='asis', echo=FALSE, out.width='100%'} -->
-<!-- cat(knitr::knit_child(knitr::opts_current$get (name='right_content_path'), -->
-<!--                   options=list (name=knitr::opts_current$get (name='img_content_path'))), sep = '') -->
-<!-- ``` -->
-
-<!-- </div> -->
-
-<!-- 
-  Here's another.
--->
-
 <div style="float: left; width: 40%; text-align: left;">
 
 ```{r, results='asis', echo=FALSE}
