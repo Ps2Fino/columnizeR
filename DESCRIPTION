@@ -10,7 +10,7 @@ Description: This package contains utility functions for specifying dual column 
     automatically render 2 columns of equal width irrespective of the rendered output
     The intention is that dual.column is called inside r chunks in Rmd files.
     The function will then populate the generated md file with the correct template corresponding to the current
-output format specified.
+    output format specified.
 License: LGPL
 Encoding: UTF-8
 LazyData: true
