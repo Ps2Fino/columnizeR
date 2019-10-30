@@ -26,9 +26,9 @@
 ```{r, results='asis', echo=FALSE}
 is.text <- knitr::opts_current$get(name='content.type')
 if (is.text) {
-  cat (readr::read_lines(file = paste0(here::here(), '/', knitr::opts_current$get(name='left_content_path'))), sep = '\n')
+  cat (readr::read_lines(file = paste0(knitr::opts_current$get(name='working_dir'), '/', knitr::opts_current$get(name='left_content_path'))), sep = '\n')
 } else {
-  cat(knitr::knit_child(paste0(here::here(), '/', knitr::opts_current$get (name='left_content_path')),
+  cat(knitr::knit_child(paste0(knitr::opts_current$get(name='working_dir'), '/', knitr::opts_current$get (name='left_content_path')),
                     options=list (name=knitr::opts_current$get (name='img_content_path'))), sep = '')
 }
 ```
@@ -37,7 +37,7 @@ if (is.text) {
 <div style="float: right; width: 50%; text-align: right;">
 
 ```{r, results='asis', echo=FALSE, out.width='100%'}
-cat(knitr::knit_child(paste0(here::here(), '/', knitr::opts_current$get (name='right_content_path')),
+cat(knitr::knit_child(paste0(knitr::opts_current$get(name='working_dir'), '/', knitr::opts_current$get (name='right_content_path')),
                   options=list (name=knitr::opts_current$get (name='img_content_path'))), sep = '')
 ```
 
