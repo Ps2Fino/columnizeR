@@ -1,0 +1,25 @@
+::::::::{.columns}
+:::{.column}
+
+```{r, results='asis', echo=FALSE}
+is.text <- knitr::opts_current$get(name='content.type')
+if (is.text) {
+  cat (readr::read_lines(file = knitr::opts_current$get(name='left_content_path')), sep = '\n')
+} else {
+  cat(knitr::knit_child(knitr::opts_current$get (name='left_content_path'),
+                    options=list (name=knitr::opts_current$get (name='img_content_path'))), sep = '')
+}
+```
+
+:::
+
+:::{.column}
+
+```{r, results='asis', echo=FALSE, warning=FALSE}
+cat(knitr::knit_child(knitr::opts_current$get (name='right_content_path'),
+                  options=list (name=knitr::opts_current$get (name='img_content_path'))), sep = '')
+```
+
+:::
+
+::::::
