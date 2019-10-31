@@ -2,7 +2,7 @@ Package: columnizeR
 Type: Package
 Title: Utilties for Creating Column Output Using Knitr 
 Version: 0.1.0
-Author: Daniel J. Finnegan
+Authors@R: as.person("Daniel J. Finnegan <finnegand@cardiff.ac.uk> [aut, cre]")
 Maintainer: Daniel J. Finnegan <finnegand@cardiff.ac.uk>
 Description: This package contains utility functions for specifying dual column output in RMarkdown files.
     I wrote it to ease the pain of creating columns across HTML, Beamer, and PowerPoint presentations.
@@ -11,7 +11,7 @@ Description: This package contains utility functions for specifying dual column 
     The intention is that dual.column is called inside r chunks in Rmd files.
     The function will then populate the generated md file with the correct template corresponding to the current
     output format specified.
-License: LGPL
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports:
